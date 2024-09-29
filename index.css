@@ -562,7 +562,45 @@ body:not(.user-is-tabbing) a:focus {
         margin: 0 var(--gutter-huge) 0 0;
     }
 }
-
+#customer-reviews {
+    margin: 50px 0;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+  }
+  
+  #reviews-container {
+    margin-bottom: 20px;
+  }
+  
+  .review {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  #review-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #review-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #review-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
 /* --------------------------------------- */
 /* ----- Contact ----- */
 /* --------------------------------------- */
