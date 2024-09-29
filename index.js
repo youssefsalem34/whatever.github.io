@@ -41,25 +41,3 @@ window.addEventListener("scroll", () => {
     alterStyles(isBackToTopRendered);
   }
 });
-document.getElementById('review-form').addEventListener('submit', function(event) {
-  event.preventDefault();
-  
-  const reviewText = document.getElementById('review-text').value;
-
-  if (reviewText.trim() === "") {
-    alert("Please write a review before submitting.");
-    return;
-  }
-
-  // Create a new review element
-  const review = document.createElement('div');
-  review.classList.add('review');
-  review.textContent = reviewText;
-
-  // Add the new review to the reviews container
-  const reviewsContainer = document.getElementById('reviews-container');
-  reviewsContainer.appendChild(review);
-
-  // Clear the textarea
-  document.getElementById('review-text').value = '';
-});
