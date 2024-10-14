@@ -401,26 +401,7 @@ body:not(.user-is-tabbing) a:focus {
 .nav__item:not(:last-child) {
     margin-right: var(--gutter-medium);
 }
-@media (max-width: 600px) {
-    .nav {
-        flex-direction: column; /* Stack items */
-        align-items: center; 
-    }
 
-    .nav__items {
-        flex-direction: column; /* Stack nav items */
-        align-items: center; 
-    }
-
-    .nav__item:not(:last-child) {
-        margin-right: 0; 
-        margin-bottom: var(--gutter-small); 
-    }
-
-    .nav__logo {
-        width: 150px; /* Adjust for mobile */
-    }
-}
 @media(max-width: 500px) {
     .nav {
         justify-content: center;
