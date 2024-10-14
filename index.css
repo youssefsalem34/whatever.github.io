@@ -383,23 +383,19 @@ body:not(.user-is-tabbing) a:focus {
     width: 70%; /* Ensure navbar spans full width */
     z-index: 10;
 }
-
-/* .nav__items {
-    display: flex;
-    list-style: none;
-} */
 .nav__logo {
     width: 100px; /* Adjust the width as per your preference */
     height: auto; /* Keeps the aspect ratio */
-    /*margin-right: 1rem;  Adds space between the logo and navigation items */
+    margin-right: 1rem; /* Adds space between the logo and navigation items */
 }
-
 .nav__items {
     display: flex;
     list-style: none;
     padding-left: 0;
     margin: 0;
+
 }
+
 
 
 .nav__item:not(:last-child) {
