@@ -367,16 +367,40 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Navigation ----- */
 /* --------------------------------------- */
 
-.nav {
+/* .nav {
     display: flex;
     justify-content: flex-end;
     padding: var(--gutter-normal) 0;
+} */
+.nav {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center; /* Center items vertically */
+    padding: var(--gutter-normal) 0;
+    position: fixed;
+    top: 0;
+    background-color: rgb(146, 146, 146); /* Optional: Add a background color for better visibility */
+    width: 70%; /* Ensure navbar spans full width */
+    z-index: 10;
+}
+
+/* .nav__items {
+    display: flex;
+    list-style: none;
+} */
+.nav__logo {
+    width: 100px; /* Adjust the width as per your preference */
+    height: auto; /* Keeps the aspect ratio */
+    margin-right: 1rem; /* Adds space between the logo and navigation items */
 }
 
 .nav__items {
     display: flex;
     list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
+
 
 .nav__item:not(:last-child) {
     margin-right: var(--gutter-medium);
