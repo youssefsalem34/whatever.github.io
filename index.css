@@ -379,12 +379,12 @@ body:not(.user-is-tabbing) a:focus {
     padding: var(--gutter-normal) 0;
     position: fixed;
     top: 0;
-    background-color: rgba(146, 146, 146, 0.308); /* Optional: Add a background color for better visibility */
+    background-color: rgba(146, 146, 146, 0.678); /* Optional: Add a background color for better visibility */
     width: 50%; /* Ensure navbar spans full width */
     z-index: 1000;
 }
 .nav__logo {
-    width: 150px; /* Adjust the width as per your preference */
+    width: 180px; /* Adjust the width as per your preference */
     height: auto; /* Keeps the aspect ratio */
     margin-right: 1rem; /* Adds space between the logo and navigation items */
 }
