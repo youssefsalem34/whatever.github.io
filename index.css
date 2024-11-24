@@ -382,7 +382,6 @@ body:not(.user-is-tabbing) a:focus {
     /* Center items vertically */
     padding: var(--gutter-normal) 0;
     top: 0;
-    background-color: rgba(146, 146, 146, 0.678);
     /* Optional: Add a background color for better visibility */
     width: fit-content;
     /* Ensure navbar spans full width */
@@ -390,20 +389,22 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .nav__logo {
-    width: 180px;
+    width: 340px;
     /* Adjust the width as per your preference */
     height: auto;
     /* Keeps the aspect ratio */
     margin-right: 1rem;
     /* Adds space between the logo and navigation items */
+    mix-blend-mode: multiply;
 }
 
 .nav__items {
     display: flex;
     list-style: none;
-    padding-left: 0;
+    padding-left: 100px;
+    padding-right: 100px;
     margin: 0;
-
+    background-color: rgba(146, 146, 146, 0.678);
 }
 
 
