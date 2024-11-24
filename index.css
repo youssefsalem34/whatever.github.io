@@ -42,7 +42,7 @@
 
     --container-max-width: 1180px;
     --container-normal-width: 800px;
-    --container-medium-width: 700px; 
+    --container-medium-width: 700px;
     --container-small-width: 500px;
 
     --gutter-huge: 12rem;
@@ -55,7 +55,8 @@
 }
 
 html {
-    font-size: 62.5%; /* (16/10)*100 = 62.5% => 1rem = 10px */
+    font-size: 62.5%;
+    /* (16/10)*100 = 62.5% => 1rem = 10px */
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -178,7 +179,7 @@ p {
 }
 
 @media(max-width: 900px) {
-    p { 
+    p {
         max-width: var(--container-small-width);
     }
 }
@@ -219,7 +220,7 @@ body:not(.user-is-tabbing) a:focus {
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
-    border: 1px solid  var(--pink);
+    border: 1px solid var(--pink);
     font-weight: 400;
 }
 
@@ -337,32 +338,33 @@ body:not(.user-is-tabbing) a:focus {
     width: 100%;
     overflow-x: auto;
     display: flex;
-  }
-  
-  .work__scroll-gallery {
+}
+
+.work__scroll-gallery {
     display: flex;
     gap: 10px;
-  }
-  
-  .work__image {
+}
+
+.work__image {
     width: 100%;
     max-width: 300px;
     height: auto;
     border-radius: 10px;
-  }
-  
-  .work__image-box::-webkit-scrollbar {
+}
+
+.work__image-box::-webkit-scrollbar {
     width: 5px;
-  }
-  
-  .work__image-box::-webkit-scrollbar-thumb {
+}
+
+.work__image-box::-webkit-scrollbar-thumb {
     background-color: #888;
     border-radius: 10px;
-  }
-  
-  .work__image-box::-webkit-scrollbar-thumb:hover {
+}
+
+.work__image-box::-webkit-scrollbar-thumb:hover {
     background-color: #555;
-  }
+}
+
 /* --------------------------------------- */
 /* ----- Navigation ----- */
 /* --------------------------------------- */
@@ -374,20 +376,28 @@ body:not(.user-is-tabbing) a:focus {
 } */
 .nav {
     display: flex;
-    justify-content: center; /* Align items to the left */
-    align-items: center; /* Center items vertically */
+    justify-content: center;
+    /* Align items to the left */
+    align-items: center;
+    /* Center items vertically */
     padding: var(--gutter-normal) 0;
-    position: fixed;
     top: 0;
-    background-color: rgba(146, 146, 146, 0.678); /* Optional: Add a background color for better visibility */
-    width: 50%; /* Ensure navbar spans full width */
+    background-color: rgba(146, 146, 146, 0.678);
+    /* Optional: Add a background color for better visibility */
+    width: fit-content;
+    /* Ensure navbar spans full width */
     z-index: 1000;
 }
+
 .nav__logo {
-    width: 180px; /* Adjust the width as per your preference */
-    height: auto; /* Keeps the aspect ratio */
-    margin-right: 1rem; /* Adds space between the logo and navigation items */
+    width: 180px;
+    /* Adjust the width as per your preference */
+    height: auto;
+    /* Keeps the aspect ratio */
+    margin-right: 1rem;
+    /* Adds space between the logo and navigation items */
 }
+
 .nav__items {
     display: flex;
     list-style: none;
@@ -456,7 +466,7 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
+    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .4)),
         url('./images/header.jpg');
     height: 100vh;
     background-size: cover;
@@ -608,7 +618,7 @@ body:not(.user-is-tabbing) a:focus {
     .about__text {
         flex: 0 0 35%;
     }
-    
+
     .about__photo-container {
         flex: 1;
         margin: 0 var(--gutter-huge) 0 0;
@@ -661,5 +671,5 @@ body:not(.user-is-tabbing) a:focus {
 @media(max-width: 500px) {
     .footer {
         padding: var(--gutter-medium) 0;
-    } 
+    }
 }
